@@ -151,7 +151,7 @@ header {
         width: 70%; /* Full width on small screens */
         background-color: #fff;
         max-height: 50%; /* Initially set max-height to 0 */
-        overflow: hidden; /* Hide overflowing content */
+        overflow: auto; /* Hide overflowing content */
         text-align: center; /* Center the menu items */
         padding: 10px 0; /* Add padding for better alignment */
     }
@@ -199,12 +199,13 @@ header {
     .nav-links-container {
         display: none; /* Hide the menu by default */
         flex-direction: column; /* Make the menu vertical */
-        width: 70%; /* Full width on small screens */
+        width: 100%; /* Full width on small screens */
         background-color: #fff;
         max-height: 50%; /* Initially set max-height to 0 */
-        overflow: hidden; /* Hide overflowing content */
+        overflow: auto; /* Hide overflowing content */
         text-align: center; /* Center the menu items */
         padding: 10px 0; /* Add padding for better alignment */
+
     }
 
     .hero h1 {
