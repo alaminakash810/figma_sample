@@ -190,7 +190,7 @@ header {
     }
 
     .video-preview video {
-        width: 60vw;
+        width: 70vw;
         height: auto; /* Make sure the video scales down on smaller screens */
     }
 }
@@ -228,7 +228,7 @@ header {
     }
 
     .video-preview video {
-        max-width: 400px; /* Ensures full width on smaller screens */
+        max-width: 60vw; /* Ensures full width on smaller screens */
         height: auto;
     }
 }
