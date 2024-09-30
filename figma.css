@@ -1,0 +1,221 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Center and Right Align Navigation Links */
+.nav-links-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    transition: max-height 0.3s ease-out; /* Smoothly expand/collapse */
+    max-height: none; /* Allow full height by default */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.center-links {
+    margin: 0 auto;
+    padding-left:22.5vw; /* Push center links to the center */
+}
+
+.right-links {
+    margin-left: auto; /* Push right-side links to the right */
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links a:hover {
+    font-weight: bold;
+}
+
+.nav-links .login {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links .signup {
+    padding: 8px 18px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Hamburger for mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #000;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero span {
+    background: linear-gradient(to right, #ff0080, #ff00ff, #4b00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cta-button {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+.trial-info {
+    font-family: 'Arial', sans-serif;
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+.video-preview {
+    display: flex;            /* Use flexbox for centering */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically if needed */
+    width: 100%;              /* Full width */
+    padding: 10px;            /* Optional padding */
+}
+
+.video-preview video {
+    width:65vw;         /* Responsive width */
+    height: auto;            /* Maintain aspect ratio */
+    border-radius: 10px;     /* Optional: rounded corners */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 778px) {
+    .nav-links-container {
+        display: none; /* Hide the menu by default */
+        flex-direction: column; /* Make the menu vertical */
+        width: 70%; /* Full width on small screens */
+        background-color: #fff;
+        max-height: 0; /* Initially set max-height to 0 */
+        overflow: hidden; /* Hide overflowing content */
+        text-align: center; /* Center the menu items */
+        padding: 10px 0; /* Add padding for better alignment */
+    }
+
+    .nav-links-container.show {
+        display: flex; /* Show the menu when toggled */
+        max-height: 400px; /* Allow enough height to display menu items */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Ensure vertical layout */
+        width: 70%; /* Full width for each item */
+        padding-left: 11vw;
+        margin: 0;
+    }
+
+    .nav-links li {
+        width: 100%; /* Make each link take full width */
+        text-align: center; /* Center align the text */
+        padding: 15px 0; /* Add some padding for spacing */
+        border-bottom: 1px solid #eee; /* Add a subtle separator between menu items */
+    }
+
+    .nav-links a {
+        width: 100%; /* Ensure the links take full width */
+        display: inline-block; /* Allow them to behave as block elements */
+        padding: 10px 0; /* Add some vertical padding */
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger icon */
+    }
+
+    .video-preview {
+        padding: 0;
+    }
+
+    .video-preview video {
+        width: 55vw;
+        height: auto; /* Make sure the video scales down on smaller screens */
+    }
+}
+
+@media (max-width: 440px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        padding: 10px 30px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        width: 15vw;
+        border-radius: 8px;
+    }
+
+    .video-preview {
+        padding: 0;
+    }
+
+    .video-preview video {
+        width: 45vw; /* Ensures full width on smaller screens */
+        height: auto;
+    }
+}
