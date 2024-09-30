@@ -150,7 +150,7 @@ header {
         flex-direction: column; /* Make the menu vertical */
         width: 70%; /* Full width on small screens */
         background-color: #fff;
-        max-height: fit-content; /* Initially set max-height to 0 */
+        max-height: 50%; /* Initially set max-height to 0 */
         overflow: hidden; /* Hide overflowing content */
         text-align: center; /* Center the menu items */
         padding: 10px 0; /* Add padding for better alignment */
@@ -196,6 +196,17 @@ header {
 }
 
 @media (max-width: 440px) {
+    .nav-links-container {
+        display: none; /* Hide the menu by default */
+        flex-direction: column; /* Make the menu vertical */
+        width: 70%; /* Full width on small screens */
+        background-color: #fff;
+        max-height: 50%; /* Initially set max-height to 0 */
+        overflow: hidden; /* Hide overflowing content */
+        text-align: center; /* Center the menu items */
+        padding: 10px 0; /* Add padding for better alignment */
+    }
+
     .hero h1 {
         font-size: 2rem;
     }
@@ -207,7 +218,7 @@ header {
         border: none;
         cursor: pointer;
         font-size: 1rem;
-        width: 20vw;
+        width: 50vw;
         border-radius: 8px;
     }
 
@@ -216,7 +227,7 @@ header {
     }
 
     .video-preview video {
-        width: 55vw; /* Ensures full width on smaller screens */
+        max-width: 400px; /* Ensures full width on smaller screens */
         height: auto;
     }
 }
