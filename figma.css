@@ -105,10 +105,20 @@ header {
     margin-bottom: 10px;
 }
 
-.hero span {
+h1 span {
+    display: inline; /* Default inline for larger screens */
+    color: #10d828; /* Example styling */
+}
+
+.spancolor {
     background: linear-gradient(to right, #ff0080, #ff00ff, #4b00ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.spancon {
+    display:inline;
+    color:#000;
 }
 
 .cta-button {
@@ -193,6 +203,15 @@ header {
         width: 70vw;
         height: auto; /* Make sure the video scales down on smaller screens */
     }
+
+    h1 span {
+        display: block; /* Forces 'using AI' onto a new line on smaller screens */
+        margin-top: 10px; /* Optional spacing */
+    }
+
+    h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
 }
 
 @media (max-width: 440px) {
@@ -206,10 +225,6 @@ header {
         text-align: center; /* Center the menu items */
         padding: 10px 0; /* Add padding for better alignment */
 
-    }
-
-    .hero h1 {
-        font-size: 2rem;
     }
 
     .cta-button {
@@ -230,5 +245,14 @@ header {
     .video-preview video {
         max-width: 70vw; /* Ensures full width on smaller screens */
         height: auto;
+    }
+
+    .spancolor {
+        display: block; /* Forces 'using AI' onto a new line on smaller screens */
+        margin-top: 10px; /* Optional spacing */
+    }
+
+    h1 {
+        font-size: 1rem; /* Adjust font size for smaller screens */
     }
 }
