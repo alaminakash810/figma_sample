@@ -105,12 +105,8 @@ header {
     margin-bottom: 10px;
 }
 
-h1 span {
-    display: inline; /* Default inline for larger screens */
-    color: #10d828; /* Example styling */
-}
-
 .spancolor {
+    display: inline;
     background: linear-gradient(to right, #ff0080, #ff00ff, #4b00ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -204,12 +200,12 @@ h1 span {
         height: auto; /* Make sure the video scales down on smaller screens */
     }
 
-    h1 span {
+    .spancolor {
         display: block; /* Forces 'using AI' onto a new line on smaller screens */
         margin-top: 10px; /* Optional spacing */
     }
 
-    h1 {
+    .hero h1 {
         font-size: 2rem; /* Adjust font size for smaller screens */
     }
 }
@@ -253,6 +249,6 @@ h1 span {
     }
 
     h1 {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
 }
