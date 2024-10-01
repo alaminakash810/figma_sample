@@ -202,7 +202,7 @@ header {
 
     .spancolor {
         display: block; /* Forces 'using AI' onto a new line on smaller screens */
-        margin-top: 10px; /* Optional spacing */
+        margin-top: 3px; /* Optional spacing */
     }
 
     .hero h1 {
@@ -245,7 +245,7 @@ header {
 
     .spancolor {
         display: block; /* Forces 'using AI' onto a new line on smaller screens */
-        margin-top: 10px; /* Optional spacing */
+        margin-top: 3px; /* Optional spacing */
     }
 
     h1 {
