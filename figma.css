@@ -139,13 +139,15 @@ header {
     justify-content: center;  /* Center horizontally */
     align-items: center;      /* Center vertically if needed */
     width: 100%;              /* Full width */
-    padding: 10px;            /* Optional padding */
+    padding: 10px;           
 }
 
 .video-preview video {
     width:620px;         /* Responsive width */
     height: auto;            /* Maintain aspect ratio */
     border-radius: 10px;     /* Optional: rounded corners */
+    box-shadow: 3px 3px 15px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 
